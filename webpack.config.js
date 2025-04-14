@@ -45,10 +45,10 @@ module.exports = (env) => {
           test: /\.mdx?$/,
           use: [
             {
-              loader: 'babel-loader',
+              loader: "babel-loader",
             },
             {
-              loader: '@mdx-js/loader',
+              loader: "@mdx-js/loader",
             },
           ],
         },
