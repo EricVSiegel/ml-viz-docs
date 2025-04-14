@@ -1,7 +1,9 @@
-import { AppShell, ActionIcon, Group, Title, Burger, Flex } from "@mantine/core";
+import { AppShell, ActionIcon, Group, Burger, Flex, Image } from "@mantine/core";
 import { IconMoonStars, IconSun } from "@tabler/icons-react";
+import GooderAI from "../../gooder-ai.png";
 import type { MantineColorScheme } from "@mantine/core";
 import type React from "react";
+import { NavLink } from "react-router";
 
 export interface HeaderProps {
   colorScheme: MantineColorScheme;
@@ -21,8 +23,14 @@ export function Header({
       <Group justify="space-between" align="center">
         <Flex align="center" gap={5}>
           <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
-          {/* Remove title and add logo in next PR */}
-          <Title order={5}>LOGO</Title>
+          <NavLink to="/">
+            <Image
+              src={GooderAI.src}
+              height={30}
+              fit="contain"
+              style={{ cursor: "pointer" }}
+            />
+          </NavLink>
         </Flex>
         <ActionIcon onClick={onToggleColorScheme} variant="default">
           {colorScheme === "dark" ? <IconSun /> : <IconMoonStars />}
