@@ -1,7 +1,6 @@
 import { App } from "./app";
 import { ErrorPage } from "./pages/ErrorPage";
-import { PageA } from "./pages/Page-A";
-import { PageB } from "./pages/Page-B";
+import PageA from "./pages/PageA.mdx";
 import { createBrowserRouter } from "react-router";
 
 export const Routers = createBrowserRouter([
@@ -11,12 +10,8 @@ export const Routers = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "page-a",
+        path: "/",
         element: <PageA />,
-      },
-      {
-        path: "page-b",
-        element: <PageB />,
       },
     ],
   },
