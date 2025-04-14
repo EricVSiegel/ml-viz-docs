@@ -32,8 +32,7 @@ children: [
   },
 ]
 ```
-- Update the children array
-- Add a new object inside the children array that has two properties — path for the URL, and element for the page (component) available in the application.
+- Update the children array; add a new object inside the children array that has two properties — path for the URL, and element for the page (component) available in the application.
 ```
 {
   path: "/about",
