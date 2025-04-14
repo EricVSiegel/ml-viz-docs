@@ -36,8 +36,8 @@ children: [
 - Add a new object inside the children array that has two properties — path for the URL, and element for the page (component) available in the application.
 ```
 {
-  path: "/",
-  element: <PageA />,
+  path: "/about",
+  element: <About />,
 }
 ```
 
