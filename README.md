@@ -14,7 +14,7 @@ It has support for:
 - PWA/Service Workers ✅
 - Pre-commit hooks ✅
 - `shx` for OS agnostic CLI ✅
-- Unit testing via Jest and `ts-jest`.
+- Unit testing via Jest and `ts-jest`. ✅
 - MDX integration via `@mdx-js/react` ✅
 
 This template repository is to be used for creating any new Manufac's ReactJS based project.
