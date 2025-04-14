@@ -17,7 +17,6 @@ It has support for:
 - Unit testing via Jest and `ts-jest`. ✅
 - MDX integration via `@mdx-js/react` ✅
 
-This template repository is to be used for creating any new Manufac's ReactJS based project.
 
 
 # Create a New Page (MDX)
