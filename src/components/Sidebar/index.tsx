@@ -7,18 +7,6 @@ const NavLinks: { path: string; label: string }[] = [
     path: "/",
     label: "Home",
   },
-  {
-    path: "/page-a",
-    label: "PageA",
-  },
-  {
-    path: "/page-b",
-    label: "PageB",
-  },
-  {
-    path: "/broken",
-    label: "Broken",
-  },
 ];
 
 export function Sidebar(): React.JSX.Element {

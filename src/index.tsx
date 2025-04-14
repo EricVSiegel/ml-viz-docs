@@ -1,5 +1,6 @@
 import { Routers } from "./routes";
 import { MantineProvider, createTheme } from "@mantine/core";
+import { MDXProvider } from "@mdx-js/react";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider } from "react-router";
@@ -10,6 +11,13 @@ import "@fontsource/ruda/700.css";
 import "@fontsource/ruda/800.css";
 import "@fontsource/ruda/900.css";
 
+/** @type {MDXComponents} */
+const components = {
+  em(properties: React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>) {
+    return <i {...properties} />;
+  },
+};
+
 const MantineTheme = createTheme({
   fontFamily: "Ruda, san-serif",
 }); // Ref: https://mantine.dev/theming/theme-object/#store-theme-override-object-in-a-variable
@@ -18,7 +26,9 @@ const root = createRoot(document.getElementById("root") as HTMLDivElement);
 root.render(
   <StrictMode>
     <MantineProvider theme={MantineTheme}>
-      <RouterProvider router={Routers} />
+      <MDXProvider components={components}>
+        <RouterProvider router={Routers} />
+      </MDXProvider>
     </MantineProvider>
   </StrictMode>,
 );
