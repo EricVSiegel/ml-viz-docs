@@ -18,7 +18,7 @@ export const Template: StoryObj<typeof Header> = {
       <AppShell>
         <Header
           onToggleColorScheme={console.log}
-          colorScheme={darkMode ? "dark" : "light"}
+          colorScheme={darkMode === true ? "dark" : "light"}
           opened={opened}
           toggle={toggle}
         />
