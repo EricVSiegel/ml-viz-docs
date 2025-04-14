@@ -1,6 +1,4 @@
-# PWA | ReactJS | Starter App
-
-A Template Repository for creating ReactJS based PWAs.
+# PWA | ReactJS | GooderAI Docs
 
 It has support for:
 
