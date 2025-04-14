@@ -12,6 +12,7 @@ import "@fontsource/ruda/700.css";
 import "@fontsource/ruda/800.css";
 import "@fontsource/ruda/900.css";
 
+// Ref: https://mdxjs.com/packages/react/#use
 /** @type {MDXComponents} */
 const components = {
   em(properties: DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>) {
