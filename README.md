@@ -21,7 +21,7 @@ It has support for:
 # Create a New Page (MDX)
 - Go to `src/pages`.
 - Create a new file with the page name and a `.mdx` extension.
-- Here's an example `Example: about.mdx`.
+- Here's an example `About.mdx`.
 - Add your content in MDX format.
 - Go to `src/routes.tsx` file.
 ```
