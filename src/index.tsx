@@ -1,7 +1,7 @@
 import { Routers } from "./routes";
 import { MantineProvider, createTheme } from "@mantine/core";
 import { MDXProvider } from "@mdx-js/react";
-import { StrictMode } from "react";
+import { DetailedHTMLProps, HTMLAttributes, StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider } from "react-router";
 import "@fontsource/ruda/400.css";
@@ -13,7 +13,7 @@ import "@fontsource/ruda/900.css";
 
 /** @type {MDXComponents} */
 const components = {
-  em(properties: React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>) {
+  em(properties: DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>) {
     return <i {...properties} />;
   },
 };
