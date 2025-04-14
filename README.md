@@ -41,4 +41,4 @@ children: [
 }
 ```
 
-- Run yarn start to view the new page
+- Run `yarn start` to view the new page.
