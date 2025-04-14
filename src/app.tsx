@@ -16,7 +16,7 @@ export function App() {
       navbar={{
         width: 260,
         breakpoint: "sm",
-        collapsed: { mobile: !opened },
+        collapsed: { mobile: opened === true ? false : true },
       }}
     >
       <Header
