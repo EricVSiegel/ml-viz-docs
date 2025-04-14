@@ -3,7 +3,7 @@ import { AppShell, ActionIcon, Group, Burger, Flex, Image } from "@mantine/core"
 import { IconMoonStars, IconSun } from "@tabler/icons-react";
 import { NavLink } from "react-router";
 import type { MantineColorScheme } from "@mantine/core";
-import type React from "react";
+import type { JSX } from "react";
 
 export interface HeaderProps {
   colorScheme: MantineColorScheme;
@@ -17,7 +17,7 @@ export function Header({
   onToggleColorScheme,
   opened,
   toggle,
-}: HeaderProps): React.JSX.Element {
+}: HeaderProps): JSX.Element {
   return (
     <AppShell.Header p="xs">
       <Group justify="space-between" align="center">

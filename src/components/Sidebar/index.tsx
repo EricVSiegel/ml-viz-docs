@@ -1,6 +1,6 @@
 import { AppShell, NavLink as MantineNavLink, Stack } from "@mantine/core";
 import { NavLink, useLocation } from "react-router";
-import type React from "react";
+import type { JSX } from "react";
 
 const NavLinks: { path: string; label: string }[] = [
   {
@@ -9,7 +9,7 @@ const NavLinks: { path: string; label: string }[] = [
   },
 ];
 
-export function Sidebar(): React.JSX.Element {
+export function Sidebar(): JSX.Element {
   const location = useLocation();
 
   return (
