@@ -18,7 +18,6 @@ It has support for:
 - MDX integration via `@mdx-js/react` ✅
 
 
-
 # Create a New Page (MDX)
 - Go to `src/pages`
 - Create a new file with the page name and a .mdx extension
