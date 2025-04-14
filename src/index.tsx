@@ -1,9 +1,10 @@
 import { Routers } from "./routes";
 import { MantineProvider, createTheme } from "@mantine/core";
 import { MDXProvider } from "@mdx-js/react";
-import { DetailedHTMLProps, HTMLAttributes, StrictMode } from "react";
+import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider } from "react-router";
+import type { DetailedHTMLProps, HTMLAttributes } from "react";
 import "@fontsource/ruda/400.css";
 import "@fontsource/ruda/500.css";
 import "@fontsource/ruda/600.css";
