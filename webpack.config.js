@@ -5,6 +5,7 @@ const path = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { GenerateSW } = require("workbox-webpack-plugin");
+const { DefinePlugin } = require("webpack");
 
 module.exports = (env) => {
   let plugins = [
@@ -21,6 +22,9 @@ module.exports = (env) => {
       template: path.join(process.cwd(), "./src/index.ejs"),
       scriptLoading: "defer",
       hash: true,
+    }),
+    new DefinePlugin({
+      BUILT_AT: JSON.stringify(new Date().toLocaleString()),
     }),
   ];
 

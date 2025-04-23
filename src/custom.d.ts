@@ -17,3 +17,5 @@ declare module "*.png" {
   const value: ResponsiveImageOutput;
   export default value;
 }
+
+declare const BUILT_AT: string;
