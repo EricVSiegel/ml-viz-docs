@@ -24,8 +24,13 @@ export function Header({
         <Flex align="center" gap={5}>
           <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
           <NavLink to="/">
-            <Image src={GooderAI.src} height={30} fit="contain"  title={`Last build: ${BUILT_AT}`}
-            style={{ cursor: "pointer" }} />
+            <Image
+              src={GooderAI.src}
+              height={30}
+              fit="contain"
+              title={`Last build: ${BUILT_AT}`}
+              style={{ cursor: "pointer" }}
+            />
           </NavLink>
         </Flex>
         <ActionIcon onClick={onToggleColorScheme} variant="default">
