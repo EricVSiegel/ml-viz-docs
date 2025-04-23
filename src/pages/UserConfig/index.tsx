@@ -10,7 +10,7 @@ export function UserConfig(): JSX.Element {
       <Button
         component="a"
         // Ref: https://stackoverflow.com/questions/19721439/download-json-object-as-a-file-from-browser
-        download={`user-config.json`}
+        download={`gooder-starter-config.json`}
         href={`data:text/json;charset=utf-8,${encodeURIComponent(JSON.stringify(data))}`}
       >
         Save config
